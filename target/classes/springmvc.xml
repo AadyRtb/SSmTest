@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+    <context:component-scan base-package="com.example.controller"></context:component-scan>
+    <mvc:annotation-driven></mvc:annotation-driven>
+    <!--静态资源放行处理-->
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+<!--    &lt;!&ndash;文件上传&ndash;&gt;-->
+<!--    <bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+<!--        &lt;!&ndash;设置文件大小限制,单位是字节&ndash;&gt;-->
+<!--        <property name="maxUploadSize" value="10000000"></property>-->
+<!--        &lt;!&ndash;设置文件上传的编码&ndash;&gt;-->
+<!--        <property name="defaultEncoding" value="utf-8"></property>-->
+<!--    </bean>-->
+    <!--注册拦截器
+        拦截对控制器的执行，添加切面逻辑，以达到对Controller访问控制的目的
+    -->
+<!--    <mvc:interceptors>-->
+<!--        &lt;!&ndash;第一个拦截器&ndash;&gt;-->
+<!--        <mvc:interceptor>-->
+<!--            <mvc:mapping path="/**"/>-->
+<!--            <bean class="com.example.interceptor.EncodingInterceptor"></bean>-->
+<!--        </mvc:interceptor>-->
+<!--        <mvc:interceptor>-->
+<!--            <mvc:mapping path="/**"/>-->
+<!--            <mvc:exclude-mapping path="/user/login"/>-->
+<!--            <bean class="com.example.interceptor.AccessInterceptor"></bean>-->
+<!--        </mvc:interceptor>-->
+
+<!--    </mvc:interceptors>-->
+
+</beans>

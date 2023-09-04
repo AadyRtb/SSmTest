@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java0328-springmvc-ssm" />
         <module name="ssmproject" />
+        <module name="SSmTest" />
         <module name="ssmproject-ProMax" />
+        <module name="java0328-springmvc-ssm" />
       </profile>
     </annotationProcessing>
   </component>

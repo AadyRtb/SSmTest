@@ -38,4 +38,3 @@ com\example\service\UserService.class
 com\example\model\ResidentManager.class
 com\example\model\Student.class
 com\example\mapper\ClazzMapper.class
-com\example\exception\BizException.class

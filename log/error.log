@@ -6847,3 +6847,93 @@ DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exe
 DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-6] - Rolling back JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@604f231f]
 DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@604f231f]
 DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-6] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@604f231f] after transaction
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Creating new transaction with name [com.example.service.impl.UserServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0008af] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0008af] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0008af] to manual commit
+DEBUG-com.example.mapper.UserMapper.log-[http-nio-8080-exec-4] - ==>  Preparing: select * from user where username=? and password=1234
+DEBUG-com.example.mapper.UserMapper.log-[http-nio-8080-exec-4] - ==> Parameters: admin(String)
+DEBUG-com.example.mapper.UserMapper.log-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Initiating transaction commit
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0008af]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0008af]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0008af] after transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StudentMapper.selectAllStu-[http-nio-8080-exec-7] - ==>  Preparing: select * from student
+DEBUG-com.example.mapper.StudentMapper.selectAllStu-[http-nio-8080-exec-7] - ==> Parameters: 
+DEBUG-com.example.mapper.StudentMapper.selectAllStu-[http-nio-8080-exec-7] - <==      Total: 50
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Creating new transaction with name [com.example.service.impl.UserServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@1f81d75e] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f81d75e] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f81d75e] to manual commit
+DEBUG-com.example.mapper.UserMapper.log-[http-nio-8080-exec-4] - ==>  Preparing: select * from user where username=? and password=1234
+DEBUG-com.example.mapper.UserMapper.log-[http-nio-8080-exec-4] - ==> Parameters: admin(String)
+DEBUG-com.example.mapper.UserMapper.log-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Initiating transaction commit
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@1f81d75e]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f81d75e]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f81d75e] after transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.EmployeeMapper.selectAllEmp-[http-nio-8080-exec-6] - ==>  Preparing: select * from management
+DEBUG-com.example.mapper.EmployeeMapper.selectAllEmp-[http-nio-8080-exec-6] - ==> Parameters: 
+DEBUG-com.example.mapper.EmployeeMapper.selectAllEmp-[http-nio-8080-exec-6] - <==      Total: 20
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-8] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.ClazzMapper.selectAllClazz-[http-nio-8080-exec-8] - ==>  Preparing: select * from clazz
+DEBUG-com.example.mapper.ClazzMapper.selectAllClazz-[http-nio-8080-exec-8] - ==> Parameters: 
+DEBUG-com.example.mapper.ClazzMapper.selectAllClazz-[http-nio-8080-exec-8] - <==      Total: 5
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.EmployeeMapper.selectAllEmp-[http-nio-8080-exec-10] - ==>  Preparing: select * from management
+DEBUG-com.example.mapper.EmployeeMapper.selectAllEmp-[http-nio-8080-exec-10] - ==> Parameters: 
+DEBUG-com.example.mapper.EmployeeMapper.selectAllEmp-[http-nio-8080-exec-10] - <==      Total: 20
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.BuildingMapper.selectAllBu-[http-nio-8080-exec-2] - ==>  Preparing: select * from dormitorybuilding
+DEBUG-com.example.mapper.BuildingMapper.selectAllBu-[http-nio-8080-exec-2] - ==> Parameters: 
+DEBUG-com.example.mapper.BuildingMapper.selectAllBu-[http-nio-8080-exec-2] - <==      Total: 5
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.RoomMapper.selectAllRoom-[http-nio-8080-exec-4] - ==>  Preparing: select * from dormitory
+DEBUG-com.example.mapper.RoomMapper.selectAllRoom-[http-nio-8080-exec-4] - ==> Parameters: 
+DEBUG-com.example.mapper.RoomMapper.selectAllRoom-[http-nio-8080-exec-4] - <==      Total: 50
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-5] - ==>  Preparing: SELECT rid ,cleanname,cphone,mname,mphone FROM cleaner,maintenance,dormitory where maintenance.floor=dormitory.rfloor AND cleaner.floor=dormitory.rfloor AND dormitory.rid=?;
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-5] - ==> Parameters: 1103(Integer)
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-5] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-7] - ==>  Preparing: SELECT rid ,cleanname,cphone,mname,mphone FROM cleaner,maintenance,dormitory where maintenance.floor=dormitory.rfloor AND cleaner.floor=dormitory.rfloor AND dormitory.rid=?;
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-7] - ==> Parameters: 1103(Integer)
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-7] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-8] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.RoomMapper.selectByRId-[http-nio-8080-exec-8] - ==>  Preparing: select * from dormitory where rid=?
+DEBUG-com.example.mapper.RoomMapper.selectByRId-[http-nio-8080-exec-8] - ==> Parameters: 1101(Integer)
+DEBUG-com.example.mapper.RoomMapper.selectByRId-[http-nio-8080-exec-8] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-9] - ==>  Preparing: SELECT rid ,cleanname,cphone,mname,mphone FROM cleaner,maintenance,dormitory where maintenance.floor=dormitory.rfloor AND cleaner.floor=dormitory.rfloor AND dormitory.rid=?;
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-9] - ==> Parameters: 1101(Integer)
+DEBUG-com.example.mapper.RoomMapper.selectByRid2-[http-nio-8080-exec-9] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.BuildingMapper.selectAllBu-[http-nio-8080-exec-1] - ==>  Preparing: select * from dormitorybuilding
+DEBUG-com.example.mapper.BuildingMapper.selectAllBu-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.BuildingMapper.selectAllBu-[http-nio-8080-exec-1] - <==      Total: 5
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-2] - ==>  Preparing: SELECT bname ,fname,fphone, rmname,rmphone FROM fireman,housemaster,dormitorybuilding where fireman.fid=dormitorybuilding.fid AND housemaster.bid=dormitorybuilding.bid AND dormitorybuilding.bname=?;
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-2] - ==> Parameters: 1(String)
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-2] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-3] - ==>  Preparing: SELECT bname ,fname,fphone, rmname,rmphone FROM fireman,housemaster,dormitorybuilding where fireman.fid=dormitorybuilding.fid AND housemaster.bid=dormitorybuilding.bid AND dormitorybuilding.bname=?;
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-3] - ==> Parameters: 2(String)
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-3] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-4] - ==>  Preparing: SELECT bname ,fname,fphone, rmname,rmphone FROM fireman,housemaster,dormitorybuilding where fireman.fid=dormitorybuilding.fid AND housemaster.bid=dormitorybuilding.bid AND dormitorybuilding.bname=?;
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-4] - ==> Parameters: 南二(String)
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-4] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-5] - ==>  Preparing: SELECT bname ,fname,fphone, rmname,rmphone FROM fireman,housemaster,dormitorybuilding where fireman.fid=dormitorybuilding.fid AND housemaster.bid=dormitorybuilding.bid AND dormitorybuilding.bname=?;
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-5] - ==> Parameters: 南一(String)
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-5] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-7] - ==>  Preparing: SELECT bname ,fname,fphone, rmname,rmphone FROM fireman,housemaster,dormitorybuilding where fireman.fid=dormitorybuilding.fid AND housemaster.bid=dormitorybuilding.bid AND dormitorybuilding.bname=?;
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-7] - ==> Parameters: 南四(String)
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-7] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-10] - ==>  Preparing: SELECT bname ,fname,fphone, rmname,rmphone FROM fireman,housemaster,dormitorybuilding where fireman.fid=dormitorybuilding.fid AND housemaster.bid=dormitorybuilding.bid AND dormitorybuilding.bname=?;
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-10] - ==> Parameters: 南一(String)
+DEBUG-com.example.mapper.BuildingMapper.selectByBname-[http-nio-8080-exec-10] - <==      Total: 1
